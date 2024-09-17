@@ -14,6 +14,11 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         // main_ru: resolve(__dirname, 'ru/index.html'),
       },
+      output: {
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`,
+      },
     },
   },
 });
