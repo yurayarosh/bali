@@ -1,0 +1,21 @@
+{
+  "name": "bali",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vituum/vite-plugin-nunjucks": "^1.1.0",
+    "front-matter": "^4.0.2",
+    "vite": "^5.4.0",
+    "vite-plugin-nunjucks": "^0.2.0"
+  },
+  "dependencies": {
+    "sass-embedded": "^1.77.8",
+    "wow.js": "^1.2.2"
+  }
+}

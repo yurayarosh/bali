@@ -1,0 +1,308 @@
+{% set LANGUAGE = "ru" %}
+
+{% extends "templates/layouts/_default.html" %}
+
+{% block content %}
+<section id="about-tour" class="about-tour section wow fadeIn">
+  <div class="container">
+    <h2 class="section__title section__title--accent">О Туре</h2>
+
+    <div class="section__content">
+      <ul class="about-tour__items">
+        <li class="about-tour__item">
+          <span class="about-tour__icon">
+            <svg class="icon" height="1em" viewBox="0 0 24 24" width="1em">
+              <path
+                d="M21.004 7.975V6c0-2.206-1.794-4-4-4h-10c-2.206 0-4 1.794-4 4v1.998l-.076.004A1 1 0 0 0 2 9v2a1 1 0 0 0 1 1h.004v6c0 .735.403 1.372.996 1.72V21a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h10v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1.276A1.994 1.994 0 0 0 21.004 18v-6a1 1 0 0 0 1-1V9.062a1.006 1.006 0 0 0-.072-.455c-.203-.487-.635-.604-.928-.632zM19.006 18H5.004v-5h14.001l.001 5zM11.004 7v4h-6V7h6zm8 0v4h-6V7h6zm-12-3h10c.736 0 1.375.405 1.722 1H5.282c.347-.595.986-1 1.722-1z"
+              />
+              <circle cx="7.5" cy="15.5" r="1.5" />
+              <circle cx="16.5" cy="15.5" r="1.5" />
+            </svg>
+          </span>
+          <p class="about-tour__item-title">Трансфер</p>
+          <div class="about-tour__item-text">
+            Используем свой собственный транспорт по запланированным маршрутам
+          </div>
+        </li>
+        <li class="about-tour__item">
+          <span class="about-tour__icon">
+            <svg class="icon" viewBox="0 0 640 512" width="1em" height="0.8em">
+              <path
+                d="M640 240v240c0 17.67-14.33 32-32 32H32c-17.67 0-32-14.33-32-32L0 144c0-26.51 21.49-48 48-48H64V24.01c0-13.25 10.75-23.1 24-23.1S112 10.75 112 24.01v72h64V24.01c0-13.25 10.75-23.1 24-23.1S224 10.75 224 24.01v71.1h64V48.01c0-26.51 21.49-48 48-48l96 .0049c26.51 0 48 21.49 48 48v143.1h112C618.5 192 640 213.5 640 240zM128 172c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.375-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V172zM128 268c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.375-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V268zM128 364c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.375-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V364zM256 172c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.375-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V172zM256 268c0-6.625-5.375-12-12-12h-40C197.4 256 192 261.4 192 268v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V268zM256 364c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.38-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V364zM416 76.01c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.375-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V76.01zM416 172c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.38-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V172zM416 268c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.38-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V268zM576 268c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.375-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V268zM576 364c0-6.625-5.375-12-12-12h-40c-6.625 0-12 5.375-12 12v40c0 6.625 5.375 12 12 12h40c6.625 0 12-5.375 12-12V364z"
+              />
+            </svg>
+          </span>
+          <p class="about-tour__item-title">Отель</p>
+          <div class="about-tour__item-text">
+            Заселяем в отель с живописными видами, люкс номерами, бассейном и питанием
+          </div>
+        </li>
+        <li class="about-tour__item">
+          <span class="about-tour__icon">
+            <svg class="icon" viewBox="0 0 512 512" width="1em" height="1em">
+              <path
+                d="M416 320h-96c-17.62 0-32-14.38-32-32s14.38-32 32-32h96c0 0 96-107 96-160s-43-96-96-96s-96 43-96 96c0 25.5 22.27 63.38 45.27 96H320c-52.88 0-96 43.12-96 96s43.13 96 96 96h96c17.62 0 32 14.38 32 32s-14.38 32-32 32H185.5c-16 24.75-33.75 47.75-47.25 64H416c52.88 0 96-43.13 96-96S468.9 320 416 320zM416 64c17.75 0 32 14.25 32 32s-14.25 32-32 32s-32-14.25-32-32S398.2 64 416 64zM96 256c-53 0-96 43-96 96s96 160 96 160s96-107 96-160S149 256 96 256zM96 384c-17.75 0-32-14.25-32-32s14.25-32 32-32s32 14.25 32 32S113.8 384 96 384z"
+              />
+            </svg>
+          </span>
+          <p class="about-tour__item-title">Комфорт</p>
+          <div class="about-tour__item-text">
+            Уделяем особое внимание комфортному отдыху во время всего путешествия
+          </div>
+        </li>
+        <li class="about-tour__item">
+          <span class="about-tour__icon">
+            <svg class="icon" viewBox="0 0 30 30" width="1em" height="1em">
+              <path
+                d="M12.684,19.993C12.382,19.732,12.139,19.417,12,19v-2c0.383-0.189,1.363-1.324,1.734-2.395  c-0.314-0.498-0.56-1.125-0.664-1.94c-0.086-0.677,0.016-1.266,0.223-1.755C13.138,10.371,13,9.696,13,9  c0-1.386,0.287-2.655,0.799-3.757C13.337,4.779,12.743,4.5,12,4.5c0,0-0.374-1.5-2.5-1.5C6.012,3,4,5.721,4,9  c0,1.104,0.528,2.214,0.528,2.214c-0.212,0.122-0.562,0.51-0.474,1.198c0.164,1.283,0.72,1.608,1.074,1.635  C5.263,15.245,6.55,16.777,7,17v2c-1,3-7,1-7,8h9C9,22.824,10.864,20.99,12.684,19.993z"
+              />
+              <g>
+                <path
+                  d="M23,19v-2c0.45-0.223,1.737-1.755,1.872-2.952c0.354-0.027,0.91-0.352,1.074-1.635c0.088-0.689-0.262-1.076-0.474-1.198   c0,0,0.528-1.003,0.528-2.214c0-2.428-0.953-4.5-3-4.5c0,0-0.374-1.5-2.5-1.5C17.012,3,15,5.721,15,9   c0,1.104,0.528,2.214,0.528,2.214c-0.212,0.122-0.562,0.51-0.474,1.198c0.164,1.283,0.72,1.608,1.074,1.635   C16.263,15.245,17.55,16.777,18,17v2c-1,3-7,1-7,8h19C30,20,24,22,23,19z"
+                />
+              </g>
+            </svg>
+          </span>
+          <p class="about-tour__item-title">Гиды</p>
+          <div class="about-tour__item-text">
+            Профессиональные гиды с 10-летним стажем, готовые решить любые вопросы 24/7 !
+          </div>
+        </li>
+        <li class="about-tour__item">
+          <span class="about-tour__icon">
+            <svg class="icon" viewBox="0 0 496 512" width="1em" height="1.03em">
+              <path
+                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200zm-80-216c17.7 0 32-14.3 32-32s-14.3-32-32-32-32 14.3-32 32 14.3 32 32 32zm160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32-32 14.3-32 32 14.3 32 32 32zm4 72.6c-20.8 25-51.5 39.4-84 39.4s-63.2-14.3-84-39.4c-8.5-10.2-23.7-11.5-33.8-3.1-10.2 8.5-11.5 23.6-3.1 33.8 30 36 74.1 56.6 120.9 56.6s90.9-20.6 120.9-56.6c8.5-10.2 7.1-25.3-3.1-33.8-10.1-8.4-25.3-7.1-33.8 3.1z"
+              />
+            </svg>
+          </span>
+          <p class="about-tour__item-title">Эмоции</p>
+          <div class="about-tour__item-text">
+            Яркие эмоции будут обеспечены, благодаря слаженной работе команды
+          </div>
+        </li>
+        <li class="about-tour__item">
+          <span class="about-tour__icon">
+            <svg class="icon" viewBox="0 0 50 50" width="1em" height="1em">
+              <path
+                d="M43,39h6V4H8v6H1v36h42V39z M10,6h37v31h-4V10H10V6z M8,12h33v7.586l-4-4l-17,17l-10-10l-7,7V12H8z M41,44H3V32.414l7-7   l10,10l17-17l4,4V39V44z"
+              />
+              <path
+                d="M20,25c2.757,0,5-2.243,5-5s-2.243-5-5-5s-5,2.243-5,5S17.243,25,20,25z M20,17c1.654,0,3,1.346,3,3s-1.346,3-3,3   s-3-1.346-3-3S18.346,17,20,17z"
+              />
+            </svg>
+          </span>
+          <p class="about-tour__item-title">Фото и видео</p>
+          <div class="about-tour__item-text">
+            Делаем впечатляющие фото и видео на профессиональные камеры.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section route wow fadeIn" id="route">
+  <div class="container">
+    <h2 class="section__title">Маршрут</h2>
+
+    <div class="section__content">
+      <p class="route__subttl1">Бали: там, где мечты становятся реальностью</p>
+      <p class="route__subttl2">Даты тура : 15 -29 октября</p>
+
+      <ul class="route__items">
+        <li class="route__item">
+          <img src="/img/2.jpg" alt="" />
+          <p>Рисовые террасы Тегаллаланг</p>
+        </li>
+        <li class="route__item">
+          <img src="/img/3.jpg" alt="" />
+          <p>Вулкан Батур</p>
+        </li>
+        <li class="route__item">
+          <img src="/img/4.jpg" alt="" />
+          <p>Храм Лемпуянг</p>
+        </li>
+        <li class="route__item">
+          <img src="/img/5.jpg" alt="" />
+          <p>Остров Нуса Пенида</p>
+        </li>
+        <li class="route__item">
+          <img src="/img/6.jpg" alt="" />
+          <p>Озеро Братан и храм Пура Улан Дану</p>
+        </li>
+        <li class="route__item">
+          <img src="/img/7.jpg" alt="" />
+          <p>Водопад Гит-Гит</p>
+        </li>
+        <li class="route__item">
+          <img src="/img/8.jpg" alt="" />
+          <p>Бали Сафари парк</p>
+        </li>
+        <li class="route__item">
+          <img src="/img/9.jpg" alt="" />
+          <p>Вулкан Агунг</p>
+        </li>
+      </ul>
+
+      <div class="section__buttons btns-group">
+        <span class="btn">3600 €</span>
+        <a href="tel:+380995000069" class="btn btn--accent-not-filled">Забронировать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hotel wow fadeIn" id="hotel">
+  <div class="container">
+    <h2 class="section__title section__title--accent">Отель</h2>
+    <div class="section__content">
+      <p class="hotel__subttl">The Kayon Jungle Resort</p>
+    </div>
+  </div>
+
+  <ul class="hotel__items">
+    <li class="hotel__item">
+      <img src="/img/10.jpg" alt="" />
+    </li>
+    <li class="hotel__item">
+      <img src="/img/11.jpg" alt="" />
+    </li>
+    <li class="hotel__item">
+      <img src="/img/12.jpg" alt="" />
+    </li>
+  </ul>
+</section>
+
+<section class="section about-us wow fadeIn" id="about-us">
+  <div class="container">
+    <h2 class="section__title section__title--accent">O Нас</h2>
+
+    <div class="section__content">
+      <p class="about-us__subttl">Ваш идеальный отдых на Бали с нами</p>
+
+      <div class="about-us__content">
+        <p>
+          Мы – компания, которая воплощает в жизнь мечты об идеальном отдыхе на Бали. Наша цель – не
+          просто организовать ваш тур, а создать уникальные впечатления, которые останутся с вами
+          навсегда. Мы знаем Бали вдоль и поперек: от уединенных пляжей до сокровищ балийской
+          культуры. Наши туры разработаны с учетом ваших интересов и предпочтений, будь то спокойное
+          уединение или насыщенные приключения.
+        </p>
+        <p>
+          С нами вы откроете не только красоту природы и традиции острова, но и получите
+          индивидуальный подход на каждом этапе вашего путешествия. Мы берем на себя все
+          организационные моменты, чтобы вы могли полностью насладиться отдыхом без забот.
+          Независимо от того, планируете ли вы романтическое путешествие, семейный отпуск или
+          активный тур с друзьями – мы сделаем ваш отдых на Бали незабываемым!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq wow fadeIn" id="faq">
+  <div class="container">
+    <h2 class="section__title">Часто задаваемые вопросы</h2>
+
+    <div class="section__content">
+      <ul class="faq__items js-faq">
+        <li class="faq__item">
+          <button type="button">Сумма за тур указана за одного человека?</button>
+          <div>
+            Все цены указаны без учета стоимость перелета, но мы помогаем найти подходящие
+            авиабилеты.
+          </div>
+        </li>
+        <li class="faq__item">
+          <button type="button">Авиаперелет входит в стоимость?</button>
+          <div>
+            Все цены указаны без учета стоимость перелета, но мы помогаем найти подходящие
+            авиабилеты.
+          </div>
+        </li>
+        <li class="faq__item">
+          <button type="button">Оформление визы входит в стоимость?</button>
+          <div>
+            Все цены указаны без учета стоимость перелета, но мы помогаем найти подходящие
+            авиабилеты.
+          </div>
+        </li>
+        <li class="faq__item">
+          <button type="button">С кем я буду проживать, если еду один?</button>
+          <div>
+            Все цены указаны без учета стоимость перелета, но мы помогаем найти подходящие
+            авиабилеты.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section form wow fadeIn" id="form">
+  <div class="form__bg">
+    <img src="/img/13.jpg" alt="" />
+  </div>
+
+  <div class="container">
+    <h2 class="section__title section__title--accent">Не нашли ответа на свой вопрос?</h2>
+
+    <div class="section__content">
+      <form class="form__form">
+        <p>Оставьте свой номер телефона и мы свяжемся с вами</p>
+        <input type="text" placeholder="Ваше имя" />
+        <input type="tel" placeholder="Ваш номер телефона" />
+        <button class="btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section> -->
+
+<section class="section feedbacks wow fadeIn" id="feedbacks">
+  <div class="container">
+    <h2 class="section__title">Отзывы наших путешественников</h2>
+
+    <div class="section__content">
+      <ul class="feedbacks__items">
+        <li class="feedbacks__item">
+          <div class="feedbacks__item-img"><img src="/img/14.jpg" alt="" /></div>
+
+          <div class="feedbacks__item-content">
+            <p class="feedbacks__item-title">Татьяна</p>
+            <div class="feedbacks__item-text">
+              Для меня Бали изначально ассоциировался с островом полного релакса в уединении с
+              благоприятными джунглями под мелодию бурлящей реки, поэтому посоветовавшись с теми,
+              кто уже бывал на острове, мы с подругой решили взять тур в компании "Travel Agency" и
+              нисколько не пожалели.
+            </div>
+          </div>
+        </li>
+        <li class="feedbacks__item">
+          <div class="feedbacks__item-img"><img src="/img/15.jpg" alt="" /></div>
+
+          <div class="feedbacks__item-content">
+            <p class="feedbacks__item-title">Карина</p>
+            <div class="feedbacks__item-text">
+              Летала на Бали не первый раз с этой компанией! Все четко, билеты, гостиница, трансфер.
+              Все фотографии на 100% соответствуют описанию. Рекомендую всем.
+            </div>
+          </div>
+        </li>
+        <li class="feedbacks__item">
+          <div class="feedbacks__item-img"><img src="/img/16.jpg" alt="" /></div>
+
+          <div class="feedbacks__item-content">
+            <p class="feedbacks__item-title">Денис</p>
+            <div class="feedbacks__item-text">
+              Благодаря сервису за час оформили себе тур. Удобная оплата карточкой без комиссий.
+              Весь сервис от туроператора был на высоте. Описание и фотографии актуальные. Вцелом
+              сервисом остались очень довольны, будем пользоваться дальше и советовать другим.
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}
