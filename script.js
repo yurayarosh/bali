@@ -52,8 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   wow.init();
 
-  console.log({ wow });
-
   window.addEventListener('scroll', onScroll);
   window.addEventListener('click', onClick);
 });
